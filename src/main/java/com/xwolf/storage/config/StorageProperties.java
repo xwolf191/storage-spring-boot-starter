@@ -9,9 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class StorageProperties {
 
     /**
-     * 类型
+     * 类型 0 :local 1:FTP 2:fastdfs
      */
-    private String type ;
+    private String type = "0";
 
     /**
      * FastDFS url
@@ -42,6 +42,11 @@ public class StorageProperties {
      * 密码
      */
     private String password;
+
+    /**
+     * key
+     */
+    private String key;
 
     public String getType() {
         return type;
@@ -99,6 +104,14 @@ public class StorageProperties {
         this.host = host;
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     @Override
     public String toString() {
         return "StorageProperties{" +
@@ -109,6 +122,7 @@ public class StorageProperties {
                 ", host='" + host + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", key='" + key + '\'' +
                 '}';
     }
 }
