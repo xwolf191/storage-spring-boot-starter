@@ -1,0 +1,152 @@
+{
+  "groups": [
+    {
+      "name": "local",
+      "type": "com.xwolf.storage.config.LocalProperties",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "ftp",
+      "type": "com.xwolf.storage.config.FtpProperties",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "oss",
+      "type": "com.xwolf.storage.config.OssProperties",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "fastdfs",
+      "type": "com.xwolf.storage.config.FastDfsProperties",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "hdfs",
+      "type": "com.xwolf.storage.config.HdfsProperties",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "qiniu",
+      "type": "com.xwolf.storage.config.QiNiuProperties",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "storage.type",
+      "type": "java.lang.String",
+      "sourceType": "com.xwolf.storage.config.StorageProperties",
+      "defaultValue": [
+        "local",
+        "FTP",
+        "FastDFS",
+        "hdfs",
+        "oss",
+        "qiniu"
+      ]
+    },
+    {
+      "name": "storage.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable storage.",
+      "sourceType": "com.xwolf.storage.config.StorageProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "storage.local.path",
+      "type": "java.lang.String",
+      "description": "local path",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.ftp.timeout",
+      "type": "java.lang.Long",
+      "description": "Ftp timeout",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.ftp.host",
+      "type": "java.lang.String",
+      "description": "Ftp Host",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.ftp.port",
+      "type": "java.lang.Integer",
+      "description": "Ftp server port",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.ftp.username",
+      "type": "java.lang.String",
+      "description": "username of ftp server ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.ftp.password",
+      "type": "java.lang.String",
+      "description": "username of ftp server ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.hdfs.url",
+      "type": "java.lang.String",
+      "description": "the connect url of HDFS ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.fastdfs.config-path",
+      "type": "java.lang.String",
+      "description": "the client config path of FastDfs ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.oss.endpoint",
+      "type": "java.lang.String",
+      "description": "the endpoint of OSS ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.oss.bucket",
+      "type": "java.lang.String",
+      "description": "the endpoint of OSS ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.oss.access-id",
+      "type": "java.lang.String",
+      "description": "the endpoint of OSS ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.oss.access-key",
+      "type": "java.lang.String",
+      "description": "the endpoint of OSS ",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.qiniu.bucket",
+      "type": "java.lang.String",
+      "description": "the bucket of QiNiu.",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.qiniu.secret-key",
+      "type": "java.lang.String",
+      "description": "the secretKey of QiNiu.",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.qiniu.access-key",
+      "type": "java.lang.String",
+      "description": "the accessKey of QiNiu.",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    },
+    {
+      "name": "storage.qiniu.timeout",
+      "type": "java.lang.Long",
+      "description": "the timeout of QiNiu.",
+      "sourceType": "com.xwolf.storage.config.StorageProperties"
+    }
+  ]
+}
