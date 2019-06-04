@@ -3,7 +3,7 @@ package com.xwolf.storage.config;
 import lombok.Data;
 
 /**
- * HDFS type.
+ * 阿里 oss type.
  *
  * @author xwolf
  */

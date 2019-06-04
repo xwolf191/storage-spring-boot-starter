@@ -8,7 +8,7 @@ import lombok.Data;
  * @author xwolf
  */
 @Data
-public class QiNiuProperties implements ConfigProperties{
+public class QiniuProperties implements ConfigProperties{
 
   private String secretKey;
 

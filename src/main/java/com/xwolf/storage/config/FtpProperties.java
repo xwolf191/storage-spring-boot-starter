@@ -3,7 +3,7 @@ package com.xwolf.storage.config;
 import lombok.Data;
 
 /**
- * Local type.
+ * Ftp type.
  *
  * @author xwolf
  */
